@@ -1,12 +1,12 @@
 # AIT Solutions
 
-## Desafío Técnico - Data Entry
+## Desafío Técnico - Automatizador de Ingreso de datos JR
 
-¡Hola y bienvenido/a al desafío técnico para el puesto de Data Entry! Este ejercicio está diseñado para evaluar tus habilidades en Python, Selenium y SQL. A continuación, encontrarás los pasos y requerimientos del desafío. Lee atentamente y sigue las instrucciones para completarlo con éxito.
+¡Hola y bienvenido/a al desafío técnico para el puesto de Automatizador de Ingreso de datos JR! Este ejercicio está diseñado para evaluar tus habilidades en Python, Selenium y SQL. A continuación, encontrarás los pasos y requerimientos del desafío. Lee atentamente y sigue las instrucciones para completarlo con éxito. Si tienes alguna duda respecto a las consignas del desafío, puedes enviar un email a elianagarcia@aitsolutions.com.ar con el asunto “Desafío técnico - AIT” y te responderemos en breve.
 
 ## Introducción
 
-En este desafío, deberás automatizar la descarga y procesamiento de listas de precios de distintos proveedores, limpiar y transformar los datos, y finalmente, actualizar una base de datos con la información procesada. El objetivo es evaluar tu capacidad para trabajar con herramientas de automatización, procesamiento de datos y bases de datos.
+En este desafío, deberás automatizar la descarga y procesamiento de listas de precios de distintos proveedores, limpiar y transformar los datos, y realizar consultas y modificaciones en una base de datos. El objetivo es evaluar tu capacidad para trabajar con herramientas de automatización, procesamiento de datos y bases de datos.
 
 El repositorio del proyecto se encuentra en [GitHub](https://github.com/elianagarcia5/desafio_data_entry_ait).
 
@@ -18,14 +18,25 @@ Implementar el código Python necesario que realice las siguientes tareas:
 2. Procesamiento y limpieza de las listas de precios.
 3. Generación de archivos .xlsx con información consolidada.
 4. Envío de las listas de precios procesadas a una API.
-5. (Opcional) Actualización de una base de datos SQL con la información de las listas.
+5. Ejecutar sentencias SQL para consultar y modificar una base de datos.
 
 ## Requisitos
 
 - **Python**: el código que desarrolles debe estar escrito en Python y debe poder ejecutarse de forma local.
 - **Bibliotecas**: Utilizar bibliotecas estándar de Python y cualquier otra biblioteca necesaria que consideres adecuada.
 
-Para completar el desafío, deberás hacer un fork del repositorio de GitHub y subir tu solución. Incluye todos los archivos que consideres necesarios y agrega un archivo README.md con las respuestas de las preguntas a desarrollar. Además, se valora la inclusión de instrucciones claras para que el evaluador pueda probar la implementación.
+  💡 Si no estás seguro de cómo arrancar, recomendamos usar Selenium, pandas y requests.
+
+## Solución
+
+Para completar el desafío, deberás hacer un fork del repositorio de GitHub y subir tu solución.
+
+- Incluye todos los archivos de tu implementación.
+- Agrega un archivo README.md con las sentencias SQL ejecutadas en la segunda consigna.
+- Agrega un archivo requirements.txt con el listado de dependencias que se deben instalar para ejecutar la implementación de la primera consigna.
+- Además, se valora la inclusión de instrucciones claras para que podamos probar la implementación.
+
+👉 **NOTA**: Si encuentras alguna dificultad para resolver alguna consigna de forma completa, te invitamos a enviar la prueba igualmente. Puedes dejar un comentario indicando por qué no lo pudiste resolver, qué conocimientos crees que te hacen falta para poder hacerlo o si sabes cómo encarar la solución aunque no pudiste lograrlo. Esto nos ayudará a evaluar tu perfil de manera integral. Valoramos tu esfuerzo y honestidad :)
 
 ## Criterios de Evaluación
 
@@ -43,7 +54,7 @@ Para completar el desafío, deberás hacer un fork del repositorio de GitHub y s
 
 #### Descarga de Listas de Precios
 
-Deberás ingresar a la siguiente página web [Desafío Data Entry Front](https://desafiodataentryfront.vercel.app/) que tiene un listado de 3 proveedores de autopartes. Cada proveedor tiene un enlace para descargar su lista de precios. Tu tarea es descargar las listas de precios de todos los proveedores.
+Deberás ingresar a la siguiente página web [Desafío Data Entry](https://desafiodataentryfront.vercel.app/) que tiene un listado de 3 proveedores de autopartes. Cada proveedor tiene un enlace para descargar su lista de precios. Tu tarea es descargar las listas de precios de todos los proveedores.
 
 Para obtener la lista de algunos proveedores es necesario iniciar sesión en la página, utiliza las siguientes credenciales:
 
@@ -104,13 +115,50 @@ En el repositorio encontrarás un archivo .sql para que puedas crear una base de
    - Obtener el repuesto más caro de cada proveedor.
    - Aplicar un recargo del 30% en los artículos de los proveedores AutoRepuestos Express y Automax cuyo precio sea mayor a $50000 y menor a $100000.
 
-### BONUS: Subida de Listas a la Base de Datos
+Para completar la consigna, debes incluir las sentencias SQL que hayas utilizado en el archivo README.md que subas al fork con la solución.
 
-Esta consigna es opcional pero suma puntos para valorar tu perfil. El objetivo es cargar los artículos de las listas de precios procesadas en la primera parte del desafío en la base de datos de la segunda parte del desafío. Debes desarrollar el código necesario para procesar los archivos .xlsx generados y actualizar la base de datos SQL, realizando las siguientes actualizaciones en la misma:
+### (Opcional) BONUS: Subida de Listas a la Base de Datos
 
-- Agregar los repuestos nuevos que no estén en la base de datos. Se debe indicar el codigo, descripción, marca, precio, proveedor y última actualización.
+Esta consigna es opcional pero suma puntos para valorar tu perfil. El objetivo es cargar los artículos de las listas de precios (generadas en la primera consigna) en la base de datos de la segunda parte del desafío. Se desea desarrollar un código que permita procesar los archivos .xlsx generados para actualizar la base de datos SQL, realizando las siguientes actualizaciones en la misma:
+
+- Agregar los repuestos nuevos de las listas que no estén en la base de datos, indicando de cada uno el código, descripción, marca, precio, proveedor y última actualización.
 - Actualizar el precio de los repuestos existentes para que coincidan con el de la lista de precios.
 
-Siéntete libre de modificar la estructura de la base de datos si lo crees necesario, siempre y cuando se cumpla con el objetivo de la consigna.
+Para completar esta consigna puedes desarrollar el código para procesar las listas y actualizar la base de datos, o simplemente puedes dejar una explicación detallando cómo abordarías la solución aunque no la implementes. Siéntete libre de modificar la estructura de la base de datos si lo crees necesario.
 
-¡Buena suerte y esperamos tu solución!
+## Solución
+
+Para completar el desafío, sigue estos pasos:
+
+1. **Haz un fork del repositorio**:
+
+   - Ve al [repositorio del proyecto](https://github.com/elianagarcia5/desafio_data_entry_ait).
+   - Haz clic en el botón "Fork" en la esquina superior derecha de la página.
+
+2. **Clona el fork a tu computadora local**:
+
+   ```bash
+   git clone https://github.com/TU_USUARIO/desafio_data_entry_ait.git
+   cd desafio_data_entry_ait
+   ```
+
+3. **Crea una nueva rama para tu solución**:
+
+   ```bash
+   git checkout -b mi-solucion
+   ```
+
+4. **Implementa tu solución** siguiendo las instrucciones proporcionadas en este README.md.
+
+5. **Agrega, comitea y sube tus cambios** a tu fork en GitHub:
+
+   ```bash
+   git add .
+   git commit -m "Mi solución al desafío técnico"
+   git push origin mi-solucion
+   ```
+
+6. **Crea un Pull Request** desde tu fork al repositorio original:
+   - Ve a tu fork en GitHub.
+   - Haz clic en "Compare & pull request".
+   - Describe brevemente tu solución y envía el Pull Request.
