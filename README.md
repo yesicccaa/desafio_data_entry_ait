@@ -83,7 +83,7 @@ Una vez que se procesan las listas de precios y se obtienen los archivos .xlsx f
 
 - **URL de la API**: https://desafio.somosait.com/api/upload/
 - El archivo se debe subir utilizando una request form-data con el nombre "file".
-- La API analizará el archivo subido para validar que al menos estén presentes las columnas CODIGO, DESCRIPCIÓN, MARCA y PRECIO. En caso de que falte alguna de las columnas, se recibirá una respuesta con un error 400 y el mensaje "Missing required columns".
+- La API analizará el archivo subido para validar que al menos estén presentes las columnas CODIGO, DESCRIPCION, MARCA y PRECIO. En caso de que falte alguna de las columnas, se recibirá una respuesta con un error 400 y el mensaje "Missing required columns".
 - La API realizará la subida de la lista a Google Drive. En caso de que la subida sea exitosa, se recibirá una respuesta con status 200 y el link de Google Drive para acceder al archivo subido.
 
 ##### Ejemplo de respuesta de la API:
