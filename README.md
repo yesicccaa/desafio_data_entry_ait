@@ -15,7 +15,7 @@ Para completar el desafío, deberás hacer un fork de este repositorio de GitHub
 3.  automatizacion-programa
 4.  listas-manuales
 
-👉 **NOTA**: Si se te complica resolver alguna consigna de forma completa, te invitamos a enviar tu solución igualmente. Podés dejarnos un comentario indicando por qué no lo pudiste resolver, qué conocimientos creés que te hacen falta para poder hacerlo o si sabés cómo encarar la solución aunque no lo pudiste lograr. Esto nos ayudará a evaluar tu perfil de manera integral. Valoramos tu esfuerzo y honestidad :)
+👉 **NOTA**: Si se te complica resolver alguna consigna de forma completa o no llegas a terminar todo, te invitamos a enviar tu solución igualmente. Podés dejarnos un comentario indicando por qué no lo pudiste resolver, qué conocimientos creés que te hacen falta para poder hacerlo o si sabés cómo encarar la solución aunque no lo pudiste lograr. Esto nos ayudará a evaluar tu perfil de manera integral. Valoramos tu esfuerzo y honestidad :)
 
 # Introducción
 
