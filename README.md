@@ -47,7 +47,7 @@ Implementar el código Python que realice las siguientes tareas:
 
 #### 1. Descarga de Listas de Precios
 
-Deberás ingresar a la siguiente página web [Desafío Data Entry](https://desafiodataentryfront.vercel.app/) que tiene un listado de 3 proveedores de autopartes. Cada proveedor tiene un enlace para descargar su lista de precios. Tu tarea es descargar las listas de precios de todos los proveedores.
+Deberás ingresar a la siguiente página web [Desafío Data Entry](desafiodataentryait.vercel.app) que tiene un listado de 3 proveedores de autopartes. Cada proveedor tiene un enlace para descargar su lista de precios. Tu tarea es descargar las listas de precios de todos los proveedores.
 
 Para obtener la lista de algunos proveedores es necesario iniciar sesión en la página. Usá las siguientes credenciales:
 
